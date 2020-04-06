@@ -1,3 +1,8 @@
-print("hello word")
+from flask import flask
 
-print("pychran - git test")
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Test OOK"
+app.run()
